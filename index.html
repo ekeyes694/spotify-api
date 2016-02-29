@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify API</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="images/logo.png"></div>
+    </header>
+    <div class="container">
+        <div class="intro">
+
+            <div class="info">
+                <h1>Soundcloud Track Search</h1>
+                <p>The app allows you to search Soundcloud for a genre, and display tracks with the specified BPM(Beats per Minute).</p>
+            </div>
+
+        </div>
+
+        <div class="search">
+            <h3>Search for a Track and add a BPM</h3>
+            <form id="sc-search">
+                <input id="sc-terms" size="32" placeholder="Search Items...">
+                <br>
+                <input id="bpm" size="32" placeholder="Add BPM...">
+                <br>
+                <input type="submit" id="submit" value="Submit">
+            </form>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div id="track-list">
+            <ul></ul>
+        </div>
+
+    </div>
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.0.0.js"></script>
+    <script src="js/jquery-2.2.0.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
