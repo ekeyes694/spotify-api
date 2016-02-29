@@ -74,11 +74,6 @@ header {
     margin-bottom: 2em;
 }
 
-hr {
-    color: orangered;
-    width: 80%;
-}
-
 .search {
     margin-left: auto;
     margin-right: auto;
@@ -109,6 +104,11 @@ hr {
     color: white;
     background-color: orangered;
     width: 25%;
+}
+
+.search #submit:hover {
+    cursor: pointer;
+    background-color: darkorange;
 }
 
 #track-list ul {
@@ -142,6 +142,10 @@ hr {
 
 #track-info h3 {
     padding-top: .4em;
+}
+
+#track-info a:hover {
+    cursor: pointer;
 }
 
 
