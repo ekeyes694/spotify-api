@@ -18,15 +18,47 @@
 
             <div class="info">
                 <h1>Soundcloud Track Search</h1>
-                <p>The app allows you to search Soundcloud for a genre, and display tracks with the specified BPM(Beats per Minute).</p>
+                <p>The app allows you to choose a genre from Soundcloud, and display tracks with the specified BPM(Beats per Minute).</p>
             </div>
 
         </div>
 
         <div class="search">
-            <h3>Search for a Track and add a BPM</h3>
+            <h3>Choose a Genre and add a BPM</h3>
             <form id="sc-search">
-                <input id="sc-terms" size="32" placeholder="Search Items...">
+                <div class="arrow-down"></div>
+                <select name="genres" id="genre">
+                    <option disabled selected value="choose genre">Choose a Genre...</option>
+                    <option value="Alternative Rock">Alternative Rock</option>
+                    <option value="Ambient">Ambient</option>
+                    <option value="Classical">Classical</option>
+                    <option value="Country">Country</option>
+                    <option value="Dance & EDM">Dance &amp; EDM</option>
+                    <option value="Dancehall">Dancehall</option>
+                    <option value="Deep House">Deep House</option>
+                    <option value="Disco">Disco</option>
+                    <option value="Drum & Bass">Drum &amp; Bass</option>
+                    <option value="Dubstep">Dubstep</option>
+                    <option value="Eletronic">Electronic</option>
+                    <option value="Folk & Singer-Songwriter">Folk &amp; Singer-Songwriter</option>
+                    <option value="Hip-Hop & Rap">Hip-Hop &amp; Rap</option>
+                    <option value="House">House</option>
+                    <option value="Indie">Indie</option>
+                    <option value="Jazz & Blues">Jazz &amp; Blues</option>
+                    <option value="Latin">Latin</option>
+                    <option value="Metal">Metal</option>
+                    <option value="Piano">Piano</option>
+                    <option value="Pop">Pop</option>
+                    <option value="R&B & Soul">R&amp;B &amp; Soul</option>
+                    <option value="Reggae">Reggae</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Soundtrack">Soundtrack</option>
+                    <option value="Techno">Techno</option>
+                    <option value="Trance">Trance</option>
+                    <option value="Trap">Trap</option>
+                    <option value="Triphop">Triphop</option>
+
+                </select>
                 <br>
                 <input id="bpm" size="32" placeholder="Add BPM...">
                 <br>

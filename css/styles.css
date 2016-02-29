@@ -82,14 +82,40 @@ header {
     padding: .2em;
 }
 
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+    z-index: 1;
+    margin-left: 20em;
+    position: absolute;
+    margin-top: .5em;
+}
+
+#genre {
+    font-size: 1.25rem;
+    height: 1.5rem;
+    width: 83%;
+    background-color: orangered;
+    color: white;
+    letter-spacing: 0.02rem;
+    margin-left: 1.9em;
+    border: 0;
+    border-radius: 0.25rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 .search h3 {
     font-size: 1.5em;
     margin-bottom: .5em;
-    margin-left: .2em;
+    margin-left: .6em;
 }
 
-.search #sc-terms,
-#bpm {
+.search #bpm {
     border: 1px solid orangered;
     padding: .2em;
     margin-top: .5em;
@@ -160,3 +186,61 @@ Responsive styles
 (the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
 place all the mobile tables styles bellow this line
 */
+
+@media only screen and (max-device-width: 627px) {
+    #track-list ul li h1 {
+        font-size: 0.5em;
+        text-decoration: underline;
+        margin-bottom: .5em;
+    }
+    .search #bpm {
+        border: 1px solid orangered;
+        padding: .2em;
+        margin-top: .5em;
+        margin-left: 2em;
+        width: 75%;
+    }
+    .search #submit {
+        border-radius: 0.5em;
+        padding: .5em;
+        margin-left: 6em;
+        margin-top: .5em;
+        color: white;
+        background-color: orangered;
+        width: 25%;
+    }
+    .search h3 {
+        font-size: 1em;
+        margin-bottom: .5em;
+        margin-left: 1.2em;
+    }
+}
+
+@media only screen and (max-device-width: 640px) {
+    #track-list ul li h1 {
+        font-size: 0.5em;
+        text-decoration: underline;
+        margin-bottom: .5em;
+    }
+    .search #bpm {
+        border: 1px solid orangered;
+        padding: .2em;
+        margin-top: .5em;
+        margin-left: 2em;
+        width: 75%;
+    }
+    .search #submit {
+        border-radius: 0.5em;
+        padding: .5em;
+        margin-left: 6em;
+        margin-top: .5em;
+        color: white;
+        background-color: orangered;
+        width: 25%;
+    }
+    .search h3 {
+        font-size: 1em;
+        margin-bottom: .5em;
+        margin-left: 1.2em;
+    }
+}
